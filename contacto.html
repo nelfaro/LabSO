@@ -1,0 +1,302 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<style type='text/css'>
+.Estilorojo {color: #FF0000}
+.Estiloazul {color: #0000FF}
+.Estiloverde {color: #00CC00}
+.Estilofuccia {color: #FF00FF}
+.Estilonaranja {color: #CC3300}
+.Estilovioleta {color: #6600FF}
+.Estilo15 {color: #003300 }
+.Estilo17 {color: #F0F0F0}
+</style>
+<script type="text/JavaScript">
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+</script>
+<head>
+<link rel="stylesheet" href="css/hover-img.css" type="text/css" media="screen" />
+	<title>SO</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.5.0/build/reset/reset-min.css">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" charset="utf-8" />
+<link rel="stylesheet" href="css/MenuMatic.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="css/style2.css" type="text/css" media="all" charset="utf-8" />
+<link rel="stylesheet" href="css/MenuMatic2.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="styles/layout.css" type="text/css" />
+<script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.jcarousel.pack.js"></script>
+<script type="text/javascript" src="scripts/jquery.jcarousel.setup.js"></script>
+<link rel="stylesheet" href="css/hover-img.css" type="text/css" media="screen" />
+<script language="JavaScript">
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v3.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+function mostrar_applet(id){
+	if(id==1){
+		$('#muestra').html('<P><img src="images/AyudaAnomalia.jpg" alt="" width="684" height="427"/></P>');
+		$('#info').html ('<p><span class="Estilorojo"><strong>	Cantidad de marcos de p&aacute;ginas</strong>: Se deben introducir la cantidad de marcos de p&aacute;ginas a utilizar para la simulaci&oacute;n</span>.-</p><p class="Estiloazul"><strong>Informe detallado de la simulaci&oacute;n</strong>: muestra un informe detallado de la simulaci&oacute;n.-</p><p class="Estiloverde"><span class="Estilo5"><strong>Resumen de la simulaci&oacute;n</strong>: muestra un informe sint&eacute;tico de los resultados de la simulaci&oacute;n y si se produjo la anomal&iacute;a en dicha simulaci&oacute;n.-</p><p class="Estilofuccia"><strong>Gr&aacute;fico de resultados de la simulaci&oacute;n</strong>: muestra un informe gr&aacute;fico de los resultados del desarrollo de la simulaci&oacute;n.-</p>');
+		$('#titulo').html ('<p>ANOMALÍA BELADY</p>');
+	}
+	if(id==2){
+		$('#muestra').html('<P><img src="images/AyudaProceso.jpg" alt="" width="684" height="427"/></P>')
+		$('#info').html ('<p><span class="Estilorojo"><strong> Selecci&oacute;n del algoritmo de planificaci&oacute;n	</strong>: Se pueden seleccionar los distintos algoritmos que se deseamos simular </span>.-</p><p class="Estiloazul"><strong>Resultado de la simulaci&oacute;n</strong>: muestra un informe detallado del desarrollo de la simulaci&oacute;n con cada algoritmo seleccionado.-</p><p class="Estiloverde"><span class="Estilo5"><strong>Barra desplazable</strong>: podemos hacer correr la barra para observar los resultados de la simulaci&oacute;n.-</span></p><p class="Estilofuccia"><span class="Estilonaranja"><strong>Bot&oacute;n de limpieza</strong>: limpia la pantalla donde se muestran los resultados de la simulaci&oacute;n.-</span></p>');
+		$('#titulo').html ('<p>PLANIFICACIÓN DE PROCESOS</p>');
+	}
+	if(id==3){
+		$('#muestra').html('<P><img src="images/AyudaSubUnaPet.jpg" alt="" width="684" height="427"/></P>')
+		$('#info').html ('<p><span class="Estilorojo"><strong>Gr&aacute;fico estad&iacute;stico </strong>: muestra de forma gr&aacute;fica los resultados estad&iacute;sticos de la simulaci&oacute;n </span>.-</p><p class="Estiloazul"><strong>Detalle de la simulaci&oacute;n</strong>: muestra un informe detallado de los c&aacute;lculos desarrollados en la simulaci&oacute;n.-</p><p class="Estiloverde"><span class="Estiloverde"><strong>Valores para la simulaci&oacute;n  </strong>: se deben ingresar los valores de mu, lambda y el n&uacute;mero promedio de peticiones para iniciar la simulaci&oacute;n.-</span></p><p class="Estilovioleta"><span class="Estilovioleta"><strong>Bot&oacute;n calcular </strong>: inicia el desarollo de la simulaci&oacute;n.-</span></p>');
+		$('#titulo').html ('<p>SUBSISTEMA DE DISCO DE UNA PETICIÓN</p>');
+		}
+	if(id==4){
+		$('#muestra').html('<P><img src="images/AyudSubVsPet.jpg" alt="" width="684" height="427"/></P>')
+		$('#info').html ('<p><span class="Estilorojo"><strong>Gr&aacute;fico estad&iacute;stico </strong>: muestra de forma gr&aacute;fica los resultados estad&iacute;sticos de la simulaci&oacute;n </span>.-</p><p class="Estiloazul"><strong>Detalle de la simulaci&oacute;n</strong>: muestra un informe detallado de los c&aacute;lculos desarrollados en la simulaci&oacute;n.-</p><p class="Estiloverde"><span class="Estiloverde"><strong>Valores para la simulaci&oacute;n  </strong>: se deben ingresar los valores de mu, lambda y el n&uacute;mero promedio de peticiones para iniciar la simulaci&oacute;n.-</span></p><p class="Estilovioleta"><span class="Estilovioleta"><strong>Bot&oacute;n calcular </strong>: inicia el desarollo de la simulaci&oacute;n.-</span></p>');
+		$('#titulo').html ('<p>SUBSISTEMA DE DISCO DE VARIAS PETICIONES</p>');
+	}
+	if(id==5){
+		$('#muestra').html('<P><img src="images/AyudaExclusion.jpg" alt="" width="684" height="427"/></P>')
+		$('#info').html ('<p class="Estiloazul"><strong>Panel de resultados  </strong>: panel donde se visualizan  los resultados de la simulaci&oacute;n.-</p><p class="Estiloverde"><span class="Estiloverde"><strong>Valores para iniciar la simulaci&oacute;n  </strong>: se deben ingresar los valores solicitados para iniciar la simulaci&oacute;n.-</span></p><p class="Estilovioleta"><span class="Estilovioleta"><strong>Bot&oacute;n comenzar </strong>: bot&oacute;n que permite aceptar los valores de configuraci&oacute;n ingresados.- </span></p>');
+		$('#titulo').html ('<p>ALGORITMO DE EXCLUSION MUTUA</p>');
+		
+	}
+	if(id==6){
+     	$('#muestra').html('<P><img src="images/AyudaHilos.jpg" alt="" width="684" height="427"/></P>')
+		$('#info').html ('<p class="Estiloazul"><strong>Solapas de resultados y configuraci&oacute;n </strong>: permite configurar los valores iniciales y ver los resultados de la simulaci&oacute;n.-</p><p class="Estiloverde"><span class="Estiloverde"><strong>Valores para iniciar la simulaci&oacute;n  </strong>: se deben ingresar los valores solicitados para iniciar la simulaci&oacute;n.-</span></p><p class="Estilovioleta"><span class="Estilovioleta"><strong>Bot&oacute;n configurar </strong>: bot&oacute;n que permite aceptar los valores de configuraci&oacute;n ingresados.-</span></p>');
+		$('#titulo').html ('<p>HILOS EN JAVA</p>');
+		
+	}
+}
+
+$(document).ready(function(){
+
+
+
+$("ul.thumb li").hover(function() {
+	$(this).css({'z-index' : '10'});
+	$(this).find('img').addClass("hover").stop()
+		.animate({
+			marginTop: '-110px', 
+			marginLeft: '-110px', 
+			top: '50%', 
+			left: '50%', 
+			width: '300px', 
+			height: '300px',
+			padding: '20px' 
+		}, 200);
+	
+	} , function() {
+	$(this).css({'z-index' : '0'});
+	$(this).find('img').removeClass("hover").stop()
+		.animate({
+			marginTop: '0', 
+			marginLeft: '0',
+			top: '0', 
+			left: '0', 
+			width: '100px', 
+			height: '100px', 
+			padding: '5px'
+		}, 400);
+});
+
+	$("ul.thumb li a").click(function() {
+	});
+ 
+});
+
+</script>
+<link rel="stylesheet" type="text/css" href="css/buttonize.min.css">
+<style type="text/css">
+.Estilo2 {color: #FFFFFF}
+.Estilo18 {
+	color: #000066;
+	font-weight: bold;
+}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"></head>
+<body leftmargin=0 topmargin=0 marginheight="0" marginwidth="0">
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+	<td width="50%" height="639" background="images/bg.gif"><img src="images/px1.gif" width="1" height="1" alt="" border="0"></td>
+	<td valign="bottom" background="images/bg_left.gif"><img src="images/bg_left.gif" alt="" width="17" height="16" border="0"></td>
+	<td valign="top">
+      <table width="1024" border="0" cellspacing="0" cellpadding="0">
+                  <td><img src="images/Exa.jpg" alt="UNNE EXA " width="1023" height="152"></td>
+        </tr>
+      </table>
+      <table width="1024" height="44" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr bgcolor="#1A4100">
+	<td width="484" height="10" >
+	
+	
+		<ul id="nav2"><li2>
+			  <div align="center"><a href="LabSO.html" class="Estilo2">Principal</a> </div>
+		</li2>
+			<li2>
+			  <div align="center"><a href="acercade.html" class="Estilo2">Acerca de</a> </div>
+			</li2>
+			<li2>
+			  <div align="center"><a href="ayuda.html" class="Estilo2">Ayuda</a></div>
+			</li2>
+			<li2>
+			  <div align="center"><a href="contacto.html" class="Estilo2">Contacto</a></div>
+			</li2>
+		</ul>		</td>
+		<td  height="22" align="center" ><span class="Estilo2">
+		  <marquee>
+          <strong>Bienvenidos al sitio para el desarrollo de los laboratorios de la Cátedra de Sistemas Operativos</strong>
+          </marquee>
+		</span> </td>
+</tr>
+<tr>
+	<td background="images/fon02.gif" height="22" align="center" width="484">
+<table border="0" cellpadding="0" cellspacing="0" background="">
+<!--<FORM ACTION="index.php" method="post"> 
+
+<TR> 
+   <TD>LU:</TD> 
+   <TD><INPUT TYPE="text" NAME="lu" SIZE="20" MAXLENGTH="30" VALUE="<? if(isset($_POST['lu'])){echo $_POST['lu'];} ?>"></TD> 
+<TD><INPUT TYPE="submit" NAME="accion" VALUE="Ingresar"> </TD></FORM>-->
+</TR> 
+</table>	
+</td>
+	<td background="images/fon02.gif" height="22" align="center" width="540">
+	
+<table border="0" cellpadding="0" cellspacing="0" background="">
+   
+
+
+</table>	</td>
+</tr>
+<tr  bgcolor="#1A4100">
+	<td height="9" colspan="2"><span class="Estilo15"></span></td>
+</tr>
+</table>
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0"   >
+<tr  valign="top" >
+	<td width="300"    bgcolor="#003300">
+	
+	 <ul id="nav">
+
+            <li><span class="Estilo2"><strong>APPLETS EJECUTABLES</strong></span>
+				<ul>
+				</ul>
+			</li>
+			<li><a href= "javascript:mostrar_applet(1);">Anomalía Belady</a>
+		<strong></strong>
+				<ul>
+				</ul>
+			</li>
+				
+			<li><a href="javascript:mostrar_applet(2);">Planificación de Procesos</a>
+		
+				<ul>
+				</ul>
+			</li>
+			
+			<li><a href="javascript:mostrar_applet(6);">Hilos en Java</a>
+		
+				<ul></ul>
+		</li>
+		
+		<li><a href="javascript:mostrar_applet(3);">Análisis del Rendimiento de un Subsistema de Disco de Una Petición</a>
+		
+				<ul></ul>
+		</li>
+		
+			<li><a href="javascript:mostrar_applet(4);">Análisis del Rendimiento de un Subsistema de Disco de Varias Peticiones</a>
+		
+				<ul></ul>
+		</li>	
+		
+			<li><a href="javascript:mostrar_applet(5);">Algoritmo de Exclusión Mútua</a>
+		
+				<ul></ul>
+		</li>
+		
+			
+		</ul>	</td>
+
+<td height="408" bgcolor="#99D599"><img src="images/e04.png" width="13" height="103%"></td>
+	<td height="408"  bgcolor="#99D599"> 
+	<div id="titulo" > 
+		<P align="center" class="Estilo18"> Autor: nelfaro@hotmail.com  </P>
+		<P align="center" class="Estilo2">&nbsp;</P>
+		<P align="center" class="Estilo2">&nbsp;</P>
+		<P align="center" class="Estilo2">&nbsp;</P>
+		<P align="center" class="Estilo2">&nbsp;</P>
+		<P align="center" class="Estilo2">&nbsp;</P>
+		<P align="center" class="Estilo2">&nbsp;</P>
+		<P align="center" class="Estilo2">&nbsp;</P>
+		<P align="center" class="Estilo2">&nbsp;</P>
+		<P align="center" class="Estilo2">&nbsp;</P>
+		<P align="center" class="Estilo2">&nbsp;</P>
+		<P align="center" class="Estilo2">&nbsp;</P>
+		<P align="center" class="Estilo2">&nbsp;</P>
+		<P align="center" class="Estilo2">&nbsp;</P>
+		</div>
+		<div id="muestra"></div>
+		</td>
+	</tr>
+</table>
+
+
+<table width="1024" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr  bgcolor="#1A4100">
+	<td height="19" colspan="2"><span class="Estilo15">
+	
+	</span></td>
+</tr>
+</table>
+<!--div id="div_applet" ><span class="Estilo15"-->
+  <div id="info"><p><p></div>
+<!--/span></div-->
+<table width="1024" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+	<td colspan="2"><span class="Estilo15"><img src="images/px1.gif" width="1" height="1" alt="" border="0"></span></td>
+</tr>
+
+
+
+<tr  bgcolor="#003300" align="center">
+	<td ><span class="Estilo17">Copyright &copy;2011 Sistemas Operativos &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="LabSO.html">Principal</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="acercade.html">Acerca de</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="ayuda.html">Ayuda</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="contacto.html">Contacto</a>&nbsp;</span><span  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>	</td>
+</tr>
+</table>	</td>
+	<td valign="bottom" background="images/bg_right.gif"><span class="Estilo15"><img src="images/bg_right.gif" alt="" width="17" height="16" border="0"></span></td>
+	<td width="50%" background="images/bg.gif"><span class="Estilo15"><img src="images/px1.gif" width="1" height="1" alt="" border="0"></span></td>
+</tr>
+</table>
+
+</body>
+</html>

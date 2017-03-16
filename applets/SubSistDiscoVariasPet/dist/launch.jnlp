@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jnlp codebase="file:/C:/Users/Lea/Documents/NetBeansProjects/SubSistDiscoVariasPet/dist/" href="launch.jnlp" spec="1.0+">
+    <information>
+        <title>SubSistDiscoVariasPet</title>
+        <vendor>Lea</vendor>
+        <homepage href=""/>
+        <description>SubSistDiscoVariasPet</description>
+        <description kind="short">SubSistDiscoVariasPet</description>
+
+
+    </information>
+
+    <resources>
+<j2se java-vm-args="-Djava.security.policy=applet.policy" version="1.5+"/>
+<jar eager="true" href="SubSistDiscoVariasPet.jar" main="true"/>
+
+
+    </resources>
+    <component-desc/>
+</jnlp>

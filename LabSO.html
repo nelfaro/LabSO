@@ -1,0 +1,277 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<style type='text/css'>
+.Estilo15 {color: #003300 }
+.Estilo17 {color: #F0F0F0}
+</style>
+
+<head>
+<title>Sistemas Operativos</title>
+<link rel="stylesheet" href="css/MenuMatic.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="css/style2.css" type="text/css" media="all" charset="utf-8" />
+<link rel="stylesheet" href="css/MenuMatic2.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="styles/layout.css" type="text/css" />
+<link rel="stylesheet" href="css/global.css">
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.jcarousel.min.js"></script>
+<script type="text/javascript" src="scripts/slides.min.jquery.js"></script>
+
+<script type="text/javascript">
+
+$(function(){
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				play: 5000,
+				pause: 2500,
+				hoverPause: true,
+				animationStart: function(current){
+					$('.caption').animate({
+						bottom:-35
+					},100);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationStart on slide: ', current);
+					};
+				},
+				animationComplete: function(current){
+					$('.caption').animate({
+						bottom:0
+					},200);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationComplete on slide: ', current);
+					};
+				},
+				slidesLoaded: function() {
+					$('.caption').animate({
+						bottom:0
+					},200);
+				}
+			});
+		});
+
+function mostrar_applet(id){
+	if(id==1){
+		$('#div_applet').html('<P><applet codebase="applets/ProcesosApplet/build/classes"  code="ProcesoEnApplet.class" width=1005 height=400 ></applet></P>');
+	}
+	if(id==2){
+		$('#div_applet').html('<P><APPLET codebase="applets/Belady%20NetBean/build/classes" code="Rodriguez/Nelson/Fabian/Belady/Pantalla.class" width=1005 height=450></APPLET></P>')
+	}
+	
+	if(id==3){
+		$('#div_applet').html('<P><APPLET codebase="applets/SubSistDiscoUnaPet/build/classes" code="subsistdiscounapet/AnalisisDeUnaPeticion.class" width=1005 height=700></APPLET></P>')
+		}
+	if(id==4){
+		$('#div_applet').html('<P><APPLET codebase="applets/SubSistDiscoVariasPet/build/classes" code="subsistdiscovariaspet/AnalisisDeVariasPet.class" width=1005 height=700></APPLET></P>')
+	}
+	if(id==5){
+		$('#div_applet').html('<P><APPLET codebase="applets/Hilos/build/classes" code="HilosApplet.class" width="1010" height="420"></APPLET></P>')
+	}
+	if(id==6){
+		$('#div_applet').html('<P><APPLET codebase="applets/ExclusionMutua/build/classes" code="SimuladorApplet.class" width=1005 height=450></APPLET></P>')
+	}
+}
+
+
+</script>
+
+<style type="text/css">
+
+.Estilo2 {color: #FFFFFF}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"></head>
+<body leftmargin=0 topmargin=0 marginheight="0" marginwidth="0">
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+	<td width="50%" height="639" background="images/bg.gif"><img src="images/px1.gif" width="1" height="1" alt="" border="0"></td>
+	<td valign="bottom" background="images/bg_left.gif"><img src="images/bg_left.gif" alt="" width="17" height="16" border="0"></td>
+	<td valign="top">
+      <table width="1024" border="0" cellspacing="0" cellpadding="0">
+                  <td><img src="images/Exa.jpg" alt="UNNE EXA " width="100%" height="152"></td>
+        </tr>
+      </table>
+      <table width="1024" height="44" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr bgcolor="#1A4100">
+	<td width="484" height="10" >
+	
+	
+		<ul id="nav2"> 
+		  <li2>
+			  <div align="center"><a href="LabSO.html" class="Estilo2">Principal</a> </div>
+		</li2>
+			<li2>
+			  <div align="center"><a href="acercade.html" class="Estilo2">Acerca de</a> </div>
+			</li2>
+			<li2>
+			  <div align="center"><a href="ayuda.html" class="Estilo2">Ayuda</a></div>
+			</li2>
+			<li2>
+			  <div align="center"><a href="contacto.html" class="Estilo2">Contacto</a></div>
+			</li2>
+		</ul>		</td>
+		<td  height="22" align="center" ><span class="Estilo2">
+		  <marquee>
+          <strong>Bienvenidos al sitio para el desarrollo de los laboratorios de la Cátedra de Sistemas Operativos</strong>
+          </marquee>
+		</span> </td>
+</tr>
+<tr>
+	<td background="images/fon02.gif" height="22" align="center" width="484">
+<table border="0" cellpadding="0" cellspacing="0" background="">
+
+</table>	</td>
+	<td background="images/fon02.gif" height="22" align="center" width="540">
+	
+<table border="0" cellpadding="0" cellspacing="0" background="">
+   
+
+
+</table>	</td>
+</tr>
+<tr  bgcolor="#1A4100">
+	<td height="9" colspan="2"><span class="Estilo15"></span></td>
+</tr>
+</table>
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0"   >
+<tr  valign="top" >
+	<td width="300"    bgcolor="#003300">
+	
+	 <ul id="nav">
+
+            <li><span class="Estilo2"><strong>APPLETS EJECUTABLES</strong></span>
+				<ul>
+				</ul>
+			</li>
+			<li><a href="javascript:mostrar_applet(2);" >Anomalía Belady</a>
+		
+				<ul>
+				</ul>
+			</li>
+				
+			<li><a href="javascript:mostrar_applet(1);">Planificación de Procesos</a>
+		
+				<ul>
+				</ul>
+			</li>
+			
+		<li><a href="javascript:mostrar_applet(3);">Análisis del Rendimiento de un Subsistema de Disco de Una Petición</a>
+		
+				<ul></ul>
+		</li>
+		
+			<li><a href="javascript:mostrar_applet(4);">Análisis del Rendimiento de un Subsistema de Disco de Varias Peticiones</a>
+		
+				<ul></ul>
+		</li>	
+		
+		
+		
+		
+			<li><a href="javascript:mostrar_applet(6);">Algoritmo de Exclusión Mútua</a>
+		
+				<ul></ul>
+		</li>
+		
+			<li><a href="javascript:mostrar_applet(5);">Hilos en Java</a>
+		
+				<ul></ul>
+		</li>
+		</ul>	</td>
+
+<td height="408" bgcolor="#99D599"><img src="images/e04.png" width="13" height="103%"></td>
+	<td height="408"  bgcolor="#99D599"> 
+		<center>
+		<div id="example">
+			
+			<div id="slides">
+				<div class="slides_container">
+					<div class="slide">
+						<a title="Planificación de Procesos" href="javascript:mostrar_applet(1);" id="link_planificacion"> <img src="images/procesos.jpg" width="570" height="270" alt="" /></a>
+						<div class="caption" style="bottom:0">
+							<p>Planificación de Procesos</p>
+						</div>
+					</div>
+					<div class="slide">
+						<a title="Anomalia Belady" href="javascript:mostrar_applet(2);" id="link_belady"> <img src="images/Beladi.jpg" width="570" height="270" alt=""/></a>
+						<div class="caption">
+							<p>Anomalia Belady</p>
+						</div>
+					</div>
+					<div class="slide">
+						<a title="Análisis de Rendimiento de Sub. de una petición a la vez" href="javascript:mostrar_applet(3);" id="link_unapeticion"> <img src="images/SubUnaPet.jpg" width="570" height="270" alt="" /></a>
+						<div class="caption">
+							<p>Análisis de Rendimiento de Sub. de una petición a la vez</p>
+						</div>
+					</div>
+					<div class="slide">
+						<a title="Análisis de Rendimiento de Sub. de varias peticiones a la vez" href="javascript:mostrar_applet(4);" id="link_vspeticiones"><img src="images/SubVsPet.jpg"  width="570" height="270" alt="" /></a>
+						<div class="caption">
+							<p>Análisis de Rendimiento de Sub. de varias peticiones a la vez</p>
+						</div>
+					</div>
+					<div class="slide">
+						<a title="Hilos en JAVA" href="javascript:mostrar_applet(5);" id="link_hilos"><img src="images/Hilos.jpg" width="570" height="270" alt="" /></a>
+						<div class="caption">
+							<p>Hilos en JAVA</p>
+						</div>
+					</div>
+					<div class="slide">
+						<a title="Exclusión Mútua" href="javascript:mostrar_applet(6);" id="link_exmutua"><img src="images/exclusion.jpg" width="570" height="270" alt="" /></a>
+						<div class="caption">
+							<p>Exclusión Mútua</p>
+						</div>
+					</div>
+
+				</div>
+				<a href="#" class="prev"><img src="img/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
+				<a href="#" class="next"><img src="img/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>
+			</div>
+			<img src="img/example-frame.png" width="739" height="341" alt="Example Frame" id="frame">
+		</div>
+		</center>
+
+		
+		
+		
+	</td>
+	</tr>
+</table>
+
+
+<table width="1024" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr  bgcolor="#1A4100">
+	<td height="19" colspan="2"><span class="Estilo15">
+	
+	</span></td>
+</tr>
+</table>
+<div id="div_applet" ><span class="Estilo15">
+  <applet  code="ProcesoEnApplet.class" codebase="applets/ProcesosApplet/build/classes" name="applet_pagina"  id="applet_pagina" width="1005" height="400">
+  </applet>
+</span></div>
+<table width="1024" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+	<td colspan="2"><span class="Estilo15"><img src="images/px1.gif" width="1" height="1" alt="" border="0"></span></td>
+</tr>
+
+
+
+<tr  bgcolor="#003300" align="center">
+	<td ><span class="Estilo17">Copyright &copy;2011 Sistemas Operativos &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="LabSO.html" Estilo2>Principal</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="acercade.html" Estilo2>Acerca de</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="ayuda.html" Estilo2>Ayuda</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="contacto.html" Estilo2>Contacto</a>&nbsp;</span><span  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>	</td>
+</tr>
+</table>	</td>
+	<td valign="bottom" background="images/bg_right.gif"><span class="Estilo15"><img src="images/bg_right.gif" alt="" width="17" height="16" border="0"></span></td>
+	<td width="50%" background="images/bg.gif"><span class="Estilo15"><img src="images/px1.gif" width="1" height="1" alt="" border="0"></span></td>
+</tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+/* Based partially on Matthew Carroll's keyboard accessible flavor of Suckerfish 
+ * Dropdowns by Patrick Griffiths and Dan Webb. 
+ * http://carroll.org.uk/sandbox/suckerfish/bones2.html
+ */
+
+/* ----[ li2NKS ]----*/
+
+/* all menu li2nks */
+#nav2 a, #subMenusContainer a{
+	text-decoration:none;
+	display:block;
+	padding:6px 20px;
+	background-color:#003300;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+}
+
+/* Just main menu li2nks --[for non-javascript users this appli2es to submenu li2nks as well]*/
+#nav2 a{
+	margin:0;
+	float:left;	
+}
+
+/* Just sub menu li2nks */
+#subMenusContainer a, #nav2 li2 li2 a{
+	text-align:left;
+}
+
+/* All menu li2nks on hover or focus */
+#nav2 a:hover, #nav2 a:focus, #subMenusContainer a:hover, #subMenusContainer a:focus, #nav2 a.mainMenuParentBtnFocused, #subMenusContainer a.subMenuParentBtnFocused{
+}
+
+/* sub menu li2nks on hover or focus */
+#subMenusContainer a:hover, 
+#subMenusContainer a:focus, 
+#nav2 a.mainMenuParentBtnFocused, 
+#subMenusContainer a.subMenuParentBtnFocused,
+#nav2 li2 a:hover,
+#nav2 li2 a:focus{
+	background-color:#006600;
+	color:#FFF;
+}
+
+/* Parent Sub Menu li2nks ---[javascript users only]*/
+.subMenuParentBtn{ 
+	background: url(../img/arrow_right.gif) right center no-repeat;  
+}
+
+/* Parent Sub Menu li2nks on hover or focus ---[javascript users only]*/
+.subMenuParentBtnFocused{ 
+	background: url(../img/arrow_right_over.gif) right center no-repeat;  
+}
+
+/* Parent Main Menu li2nks ---[javascript users only]*/
+.mainMenuParentBtn{	
+	 background: url(../img/arrow_down.gif) right center no-repeat; 
+}
+
+/* Parent Main Menu li2nks on hover or focus ---[javascript users only]*/
+.mainMenuParentBtnFocused{	
+	background: url(../img/arrow_down_over.gif) right center no-repeat; 
+}
+
+/* ----[ OLs ul2s, li2s, and DIVs ]----*/
+
+/* Submenu Outer Wrapper - each submenu is inside a div with this class - javascript users only */
+.smOW{ 
+	display:none; 
+	position: absolute; 
+	overflow:hidden; 
+	/*the 2px left & right padding lets you have a 1px border 
+	  on the ul2 or ol inside since overflow is set to hidden*/
+	padding:0 2px;
+	margin:0 0 0 -2px;
+}
+
+
+/* All ul2s and OLs */
+#nav2, #nav2 ul2, #nav2 ol, #subMenusContainer ul2, #subMenusContainer ol { 
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	line-height: 1em;
+}
+
+/* All submenu OLs and ul2s */
+#nav2 ol, #nav2 ul2, #subMenusContainer ul2, #subMenusContainer ol {	
+	/*border around submenu goes here*/	 
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	background:#fff;	
+	border:1px soli2d #C3D46A;
+	left:0;
+}
+
+
+/* li2st items in main menu --[for non-javascript users this appli2es to submenus as well]  */
+#nav2 li2 { 
+	/*great place to use a background image as a divider*/
+	display:block;
+	li2st-style:none;
+	position:static;
+	float:left;
+}
+
+#subMenusContainer li2{
+	list-style: none;
+}
+
+/* main menu ul2 or ol elment */
+#nav2{
+	display:block;
+	position: static;
+	list-style:none;
+	margin:0 0 0 0;
+	z-index:5;
+	
+	text-align: center;
+	display:block;
+}
+
+#subMenusContainer{	display:block; 	position:absolute;	top:0;	left:0;	width:100%;	height:0;	overflow:visible;	z-index:1000000000; }
+
+
+/* --------------------------[ The below is just for non-javscript users ]--------------------------*/
+#nav2 li2 li2{	float:none; }
+
+#nav2 li2 li2 a{ /* Just submenu li2nks*/	
+	position:relative;
+	float:none;
+}
+
+#nav2 li2 ul2 { /* second-level li2sts */
+	position: absolute;
+	width: 10em;
+	margin-left: -1000em; /* using left instead of display to hide menus because display: none isn't read by screen readers */
+	margin-top:2.2em;
+}
+
+/* third-and-above-level li2sts */
+#nav2 li2 ul2 ul2 { margin: -1em 0 0 -1000em; }
+#nav2 li2:hover ul2 ul2 {	margin-left: -1000em; }
+
+ /* li2sts nested under hovered li2st items */
+#nav2 li2:hover ul2{	margin-left: 0; }
+#nav2 li2 li2:hover ul2 {	margin-left: 10em; margin-top:-2.5em;}
+
+/* extra positioning rul2es for li2mited noscript keyboard accessibili2ty */
+#nav2 li2 a:focus + ul2 {  margin-left: 0; margin-top:2.2em; }
+#nav2 li2 li2 a:focus + ul2 { left:0; margin-left: 1010em; margin-top:-2.2em;}
+#nav2 li2 li2 a:focus {left:0;  margin-left:1000em; width:10em;  margin-top:0;}
+#nav2 li2 li2 li2 a:focus {left:0; margin-left: 2010em; width: 10em;  margin-top:-1em;}
+#nav2 li2:hover a:focus{ margin-left: 0; }
+#nav2 li2 li2:hover a:focus + ul2 { margin-left: 10em; }
